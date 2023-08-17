@@ -10,3 +10,4 @@ loss_fn_time = nn.MSELoss()
 time_parameter = 0.01
 
 train_loss_list, validation_loss_list = fit(model, model_time, opt, loss_fn, loss_fn_time, train_dataloader, val_dataloader, 100)
+loss = evaluation(model, model_time, loss_fn, loss_fn_time, test_dataloader)
